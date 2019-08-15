@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto">
+    <div class="container-inner mx-auto md:flex">
       <PostList v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>
@@ -26,6 +26,8 @@
           node {
           id
           title
+          subTitle
+          featuredImage
           timeToRead
           description
           path

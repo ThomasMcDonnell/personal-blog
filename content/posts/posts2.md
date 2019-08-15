@@ -1,5 +1,5 @@
 ---
-title: "Writing In Markdown"
+title: "Writing In Markdown too"
 subTitle: "Just a little more description then the title."
 description: "Markdown post content stress test. See how your post content is being styled with Tailwind CSS."
 featuredImage: "https://source.unsplash.com/collection/325867/800x600"
@@ -49,4 +49,4 @@ The image illustrated above shows the emotion of a girl. The idea therefore, is 
 <img src="full-heart.png" alt="1.5 of 3 hearts">
 <img src="half-heart.png" alt="">
 <img src="empty-heart.png" alt="">
-```
+``` 
