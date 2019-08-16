@@ -10,7 +10,8 @@
     "@gridsome/remark-prismjs": "^0.1.0",
     "@gridsome/source-filesystem": "^0.5.0",
     "@gridsome/transformer-remark": "^0.3.2",
-    "gridsome": "^0.6.0"
+    "gridsome": "^0.6.0",
+    "vue-social-sharing": "^2.4.6"
   },
   "devDependencies": {
     "tailwindcss": "^1.1.1"
