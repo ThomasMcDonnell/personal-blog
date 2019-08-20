@@ -1,8 +1,13 @@
+@import "~prismjs/themes/prism-okaidia.css";
 @tailwind base;
 
 .container-inner {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.bg-info0 {
+    background-color: #e7f5ff;
 }
 
 @media (min-width: 640px) {

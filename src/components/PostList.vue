@@ -5,70 +5,55 @@
             <a href="#" class="flex flex-wrap no-underline hover:no-underline">
                 <img :src="post.featuredImage" class="h-full w-full rounded-t pb-6">
                 <p class="w-full text-gray-600 text-xs md:text-sm px-6 uppercase" v-html="post.title"></p>
-                <div class="w-full font-bold text-xl text-gray-900 px-6" v-html="post.subTitle"></div>
+                <div class="w-full font-bold text-xl text-gray-900 px-6 hover:text-green-400    " v-html="post.subTitle"></div>
                 <p class="text-gray-800 font-serif text-base px-6 mb-5" v-html="post.description"></p>
             </a>
         </div>
+        </g-link>
         <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
-            <div class="flex items-center justify-between">
-                <social-sharing url="https://vuejs.org/"
-                                title="The Progressive JavaScript Framework"
-                                description="Intuitive, Fast and Composable MVVM for building interactive interfaces."
-                                quote="Vue is a progressive framework for building user interfaces."
-                                hashtags="vuejs,javascript,framework"
-                                twitter-user="vuejs"
+            <div class="">
+                <social-sharing url="https://localhostdotdev.io"
+                                :title="post.title"
+                                :description="post.description"
+                                :quote="post.subTitle"
+                                hashtags="SoftwareDevelopment,WebDev,DevOps"
+                                twitter-user="localhost.dev"
                                 inline-template>
-                    <div>
-                        <network network="email">
-                            <i class="fa fa-envelope"></i> Email
+                    <div class="flex items-center justify-between">
+                        <network network="whatsapp">
+                                <font-awesome-icon
+                                        :icon="['fab', 'whatsapp']"
+                                        style="font-size: 1.5rem; color: #25D366;"
+                                />
                         </network>
                         <network network="facebook">
-                            <i class="fa fa-facebook"></i> Facebook
-                        </network>
-                        <network network="googleplus">
-                            <i class="fa fa-google-plus"></i> Google +
-                        </network>
-                        <network network="line">
-                            <i class="fa fa-line"></i> Line
-                        </network>
-                        <network network="linkedin">
-                            <i class="fa fa-linkedin"></i> LinkedIn
-                        </network>
-                        <network network="odnoklassniki">
-                            <i class="fa fa-odnoklassniki"></i> Odnoklassniki
-                        </network>
-                        <network network="pinterest">
-                            <i class="fa fa-pinterest"></i> Pinterest
-                        </network>
-                        <network network="reddit">
-                            <i class="fa fa-reddit"></i> Reddit
-                        </network>
-                        <network network="skype">
-                            <i class="fa fa-skype"></i> Skype
-                        </network>
-                        <network network="sms">
-                            <i class="fa fa-commenting-o"></i> SMS
-                        </network>
-                        <network network="telegram">
-                            <i class="fa fa-telegram"></i> Telegram
+                            <font-awesome-icon
+                                    :icon="['fab', 'facebook-f']"
+                                    style="font-size: 1.5rem; color: #3b5998;"
+                            />
                         </network>
                         <network network="twitter">
-                            <i class="fa fa-twitter"></i> Twitter
+                            <font-awesome-icon
+                                    :icon="['fab', 'twitter']"
+                                    style="font-size: 1.5rem; color: #00acee;"
+                            />
                         </network>
-                        <network network="vk">
-                            <i class="fa fa-vk"></i> VKontakte
+                        <network network="linkedin">
+                            <font-awesome-icon
+                                    :icon="['fab', 'linkedin-in']"
+                                    style="font-size: 1.5rem; color: #0077B5;"
+                            />
                         </network>
-                        <network network="weibo">
-                            <i class="fa fa-weibo"></i> Weibo
-                        </network>
-                        <network network="whatsapp">
-                            <i class="fa fa-whatsapp"></i> Whatsapp
+                        <network network="reddit">
+                            <font-awesome-icon
+                                    :icon="['fab', 'reddit']"
+                                    style="font-size: 1.5rem; color: #FF5700;"
+                            />
                         </network>
                     </div>
                 </social-sharing>
             </div>
         </div>
-        </g-link>
     </div>
 </template>
 

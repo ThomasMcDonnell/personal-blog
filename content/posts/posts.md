@@ -2,7 +2,7 @@
 title: "Writing In Markdown"
 subTitle: "Just a little more description then the title."
 description: "Markdown post content stress test. See how your post content is being styled with Tailwind CSS."
-featuredImage: "https://source.unsplash.com/collection/325867/800x600"
+featuredImage: "https://source.unsplash.com/collection/67L18R4tW_w/800x600"
 date: 2019-05-23
 ---
 
@@ -24,8 +24,15 @@ Writing good alt text for images is very important and shouldn't be sidelined. T
 ## How to Use Alt Text
 Typically, when adding an image to a webpage, we use the HTML image element to represent the image and the alt attribute on the image tag to give a description of the image. Here's an example:
 
-
 ```html
+```
+<blockquote class="flex flex-row"><span class="bg-blue-600">icon</span><span class="bg-blue-200"> Text will go here  above alt attribute describes the context of the image. In this case, if a screen reader is being used on this page. It'll read the alt text instead and the user gets a very descriptive context of the image used.
+                                                                                                                    There are other things to consider when writing alt text this</span></blockquote>
+
+```javascript
+setTimeout( () => {
+    return 2;
+})
 ```
 The above alt attribute describes the context of the image. In this case, if a screen reader is being used on this page. It'll read the alt text instead and the user gets a very descriptive context of the image used.
 There are other things to consider when writing alt text this is just a primer to writing descriptive alternate text for images. I'll be going over the important concepts to take note of when using images on the webpages.
