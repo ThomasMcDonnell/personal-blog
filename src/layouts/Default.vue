@@ -38,16 +38,27 @@
         <div>Copyright@2019</div>
         <ul class="flex items-center">
           <li class="mr-8">
-            <a href="#">
-
+            <a href="https://www.linkedin.com/in/thomas-mcdonnell-350017149/">
+              <font-awesome-icon
+                      :icon="['fab', 'linkedin-in']"
+                      style="font-size: 1.5rem; color: #fff;"
+              />
             </a>
           </li>
           <li class="mr-8">
             <a href="#">
+              <font-awesome-icon
+                      :icon="['fab', 'facebook-f']"
+                      style="font-size: 1.5rem; color: #fff;"
+              />
             </a>
           </li>
           <li class="mr-8">
-            <a href="#">
+            <a href="https://github.com/ThomasMcDonnell">
+              <font-awesome-icon
+                      :icon="['fab', 'github-alt']"
+                      style="font-size: 1.5rem; color: #fff;"
+              />
             </a>
           </li>
         </ul>
