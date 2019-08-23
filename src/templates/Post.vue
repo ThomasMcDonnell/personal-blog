@@ -1,17 +1,63 @@
 <template>
     <Layout>
-        <div class="container-inner mx-auto">
-            <div class="flex flex-row">
-                <div class="w-3/4 py-2">
+        <div class="container-inner mx-auto sm:flex">
+            <div class="w-1/5 sm:block hidden">
+                <div class="fixed">
+                    <social-sharing url="https://localhostdotdev.io"
+                                    :title="$page.post.title"
+                                    :description="$page.post.description"
+                                    :quote="$page.post.subTitle"
+                                    hashtags="SoftwareDevelopment,WebDev,DevOps"
+                                    twitter-user="localhost.dev"
+                                    inline-template>
+                        <div class="flex flex-col justify-around">
+                            <network network="whatsapp">
+                                <font-awesome-icon
+                                        :icon="['fab', 'whatsapp']"
+                                        style="font-size: 2rem; color: #25D366; margin-top: 25px;"
+                                />
+                            </network>
+                            <network network="facebook">
+                                <font-awesome-icon
+                                        :icon="['fab', 'facebook-f']"
+                                        style="font-size: 2rem; color: #3b5998; margin-top: 25px;"
+                                />
+                            </network>
+                            <network network="twitter">
+                                <font-awesome-icon
+                                        :icon="['fab', 'twitter']"
+                                        style="font-size: 2rem; color: #00acee; margin-top: 25px;"
+                                />
+                            </network>
+                            <network network="linkedin">
+                                <font-awesome-icon
+                                        :icon="['fab', 'linkedin-in']"
+                                        style="font-size: 2rem; color: #0077B5; margin-top: 25px;"
+                                />
+                            </network>
+                            <network network="reddit">
+                                <font-awesome-icon
+                                        :icon="['fab', 'reddit']"
+                                        style="font-size: 2rem; color: #FF5700; margin-top: 25px;"
+                                />
+                            </network>
+                        </div>
+                    </social-sharing>
+                </div>
+            </div>
+            <div class="sm:w-4/5 w-full">
+            <div class="flex sm:flex-row flex-col">
+                <div class="sm:w-3/4 py-2 w-full">
                     <h1 class="font-bold text-4xl py-4">{{$page.post.title}}</h1>
                     <h3 class="text-2xl">{{ $page.post.subTitle }}</h3>
                 </div>
-                <div class="w-1/4 py-2">
+                <div class="sm:block w-1/4 py-2 hidden">
                     <p class="pt-8 text-center w-2/3 h-2/3 border-b-2 border-green-400"> {{ $page.post.date}}</p>
                 </div>
             </div>
-        <div class="py-5">
-            <p v-html="$page.post.content" class="text-xl"></p>
+            <div class="py-5">
+                <p v-html="$page.post.content" class="text-xl"></p>
+            </div>
         </div>
         </div>
     </Layout>
