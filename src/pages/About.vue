@@ -7,7 +7,7 @@
           <div class="text-green-500">Welcome to my developer notebook</div>
         </div>
         <div class="sm:w-1/3 w-full mt-8 sm:mt-0">
-          <g-image src="../../static/hero.svg" alt="developer hero image" class="text-center sm:mx-0"></g-image>
+          <img src="../../static/hero.svg" alt="developer hero image" class="text-center sm:mx-0"></img>
         </div>
       </div> <!-- hero end -->
 
@@ -24,10 +24,10 @@
 
         <div class="flex flex-col sm:flex-row justify-between items-center py-16">
           <div class="sm:w-1/3 w-full">
-            <g-image src="../../static/solution-mindset.svg"></g-image>
+            <img src="../../static/solution-mindset.svg"></img>
           </div>
           <div class="w-1/3 sm:block hidden">
-            <g-image src="../../static/windows.svg"></g-image>
+            <img src="../../static/windows.svg"></img>
           </div>
         </div> <!-- end lead section -->
         <div class="projects container-inner mx-auto text-xl border-t border-grey-500 border-b py-16 mb-16">
