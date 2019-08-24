@@ -1,8 +1,9 @@
 <template>
     <Layout>
         <div class="container-inner mx-auto sm:flex">
-            <div class="w-1/5 sm:block hidden">
-                <div class="fixed">
+            <div class="w-1/5 sm:block hidden mt-4">
+                <transition name="fade">
+                <div class="fixed" v-if="show">
                     <social-sharing url="https://localhostdotdev.io"
                                     :title="$page.post.title"
                                     :description="$page.post.description"
@@ -44,6 +45,7 @@
                         </div>
                     </social-sharing>
                 </div>
+                </transition>
             </div>
             <div class="sm:w-4/5 w-full">
             <div class="flex sm:flex-row flex-col">
@@ -65,7 +67,36 @@
 
 <script>
     export default {
-        name: "Post"
+        metaInfo: {
+            title: 'Another Great Post'
+        },
+        name: "Post",
+        data () {
+            return {
+                show: false,
+            }
+        },
+        mounted () {
+            window.addEventListener('scroll', this.onScroll)
+        },
+        beforeDestroy () {
+            window.removeEventListener('scroll', this.onScroll)
+        },
+        methods: {
+            onScroll () {
+                // Get the current scroll position
+                const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight;
+                // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
+                if (currentScrollPosition < 0) {
+                    return
+                }
+                // Here we determine whether we need to show or hide the navbar
+                this.show = currentScrollPosition > 0 && currentScrollPosition < height - 1000;
+                console.log(document.documentElement.scrollHeight);
+            }
+        }
+
     }
 </script>
 
@@ -81,3 +112,12 @@
         }
     }
 </page-query>
+
+<style scoped>
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to  {
+        opacity: 0;
+    }
+</style>

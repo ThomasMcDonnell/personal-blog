@@ -13,7 +13,7 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: 'localhost.dev',
+  siteName: 'thomasmcdonnell',
   plugins: [
     {
       use: '@gridsome/source-filesystem',

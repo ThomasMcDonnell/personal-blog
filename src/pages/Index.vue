@@ -10,7 +10,7 @@
   import PostList from "@/components/PostList";
   export default {
     metaInfo: {
-      title: 'Blog.dev'
+      title: 'Blog'
     },
     components: {
       PostList
