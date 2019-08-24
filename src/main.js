@@ -15,6 +15,7 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
 
   // Third party packages
+  const SocialSharing = require('vue-social-sharing');
   Vue.use(SocialSharing);
 
   library.add( faFacebookF, faTwitter, faLinkedinIn, faWhatsapp, faReddit, faGithub, faPinterest,

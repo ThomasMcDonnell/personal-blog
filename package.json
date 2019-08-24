@@ -3,14 +3,16 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
+    "publish directory": "dist",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/free-brands-svg-icons": "^5.10.1",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "@gridsome/remark-prismjs": "^0.1.0",
     "@gridsome/source-filesystem": "^0.5.0",
     "@gridsome/transformer-remark": "^0.3.2",
