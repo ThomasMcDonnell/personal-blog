@@ -4,7 +4,7 @@
             <div class="w-1/5 sm:block hidden mt-4">
                 <transition name="fade">
                 <div class="fixed" v-if="show">
-                    <social-sharing url="https://thomasmcdonnell.xyz"
+                    <social-sharing :url="$page.post.url"
                                     :title="$page.post.title"
                                     :description="$page.post.description"
                                     :quote="$page.post.subTitle"
@@ -104,6 +104,7 @@
     query Post ($path: String!) {
         post: post (path: $path) {
             id
+            url
             title
             subTitle
             featuredImage

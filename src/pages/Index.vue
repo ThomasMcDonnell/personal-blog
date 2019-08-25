@@ -25,6 +25,7 @@
         edges {
           node {
           id
+          url
           title
           subTitle
           featuredImage

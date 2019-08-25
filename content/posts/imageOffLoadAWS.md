@@ -4,6 +4,7 @@ subTitle: "Python Pillow & Boto3 for image resize and offload to aws."
 description: "First in a two part series to help you integrate boto3 and pillow into your python web app and store images
 off site in an aws s3 bucket."
 featuredImage: "../../static/aws-boto3.jpg"
+url: "https://thomasmcdonnell.xyz/blog/python-pillow-boto3-and-aws"
 date: 2019-08-25
 ---
 Handling media files in python couldn't be any simpler with pythons Pillow. Boto3, an awesome python library, takes all of the stress out of off loading

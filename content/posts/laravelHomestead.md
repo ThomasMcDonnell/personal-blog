@@ -4,6 +4,7 @@ subTitle: "Setting up vagrant box with laravel using homestead."
 description: "Avoid the pains and pit falls of setting up vagrant and laravel with homestead, trust me it's a rabbit hole 
 you don't want to venture alone."
 featuredImage: "../../static/laravel-vagrant.jpg"
+url: "https://thomasmcdonnell.xyz/blog/vagrant-and-laravel"
 date: 2019-08-23
 ---
 
