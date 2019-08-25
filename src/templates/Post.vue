@@ -4,12 +4,12 @@
             <div class="w-1/5 sm:block hidden mt-4">
                 <transition name="fade">
                 <div class="fixed" v-if="show">
-                    <social-sharing url="https://localhostdotdev.io"
+                    <social-sharing url="https://thomasmcdonnell.xyz"
                                     :title="$page.post.title"
                                     :description="$page.post.description"
                                     :quote="$page.post.subTitle"
                                     hashtags="SoftwareDevelopment,WebDev,DevOps"
-                                    twitter-user="localhost.dev"
+                                    twitter-user="thomasmcdonnell"
                                     inline-template>
                         <div class="flex flex-col justify-around">
                             <network network="whatsapp">
@@ -119,5 +119,8 @@
     }
     .fade-enter, .fade-leave-to  {
         opacity: 0;
+    }
+    a {
+        text-decoration: underline #25D366;
     }
 </style>

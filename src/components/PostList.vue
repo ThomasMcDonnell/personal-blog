@@ -15,7 +15,7 @@
                                 :description="post.description"
                                 :quote="post.subTitle"
                                 hashtags="SoftwareDevelopment,WebDev,DevOps"
-                                twitter-user="localhost.dev"
+                                twitter-user="thomasmcdonnell"
                                 inline-template>
                     <div class="flex items-center justify-between">
                         <network network="whatsapp">
