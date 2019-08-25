@@ -10,7 +10,7 @@
         </g-link>
         <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
             <div class="">
-                <social-sharing url="https://localhostdotdev.io"
+                <social-sharing url="https://thomasmcdonnell.xyz"
                                 :title="post.title"
                                 :description="post.description"
                                 :quote="post.subTitle"
