@@ -79,6 +79,7 @@ details, don't worry you shouldn't be charged.
 
 Once you have set up correctly you should see a bucket page similar to the below picture.
 
+
 ![alt text](../../static/aws-bucket.png "aws console")
 
 At this point you can create your bucket and give it a name by selecting the create bucket on left head side.
