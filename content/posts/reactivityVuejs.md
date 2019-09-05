@@ -50,12 +50,15 @@ The Vue instance is the middle man between the DOM and the business logic, it ma
 So watch updates the DOM only when it is required, by only updating the DOM for the things that need to be changed we see a massive speed and performance 
 boost. Watchers therefore are really great for asynchronous updates as they are constantly watching the component for changes.
 
-```vue
+```html
 <template>
     <div id="app">
         <input type="number" v-model.number="counter">
     </div>
 </template>
+```
+
+```vue
 
 new Vue({
     el: '#app',
