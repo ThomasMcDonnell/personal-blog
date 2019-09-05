@@ -3,7 +3,7 @@ title: "Reactive Programming in Vue"
 subTitle: "Understanding reactive programming through VueJs."
 description: "A brief and high level overview of reactive programming. Supercharge your frontend with VueJs's implementation of asynchronous data streams."
 featuredImage: "../../static/VueJs.jpg"
-url: "https://thomasmcdonnell.xyz/blog/"
+url: "https://thomasmcdonnell.xyz/blog/reactive-programming-in-vue"
 date: 2019-08-31
 ---
 
