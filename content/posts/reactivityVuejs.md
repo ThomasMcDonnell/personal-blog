@@ -74,9 +74,12 @@ new Vue({
     }
 });
 ```
-> Yes the watcher needs to be named the same as the property unlike computed's when watching a property you trigger a method on change, 
-we have access to the new value and the old value, so we can also gain access to nested values with 'deep'.
 
+<div class="tip custom-block">
+<p>Yes the watcher needs to be named the same as the property unlike computed's when watching a property you trigger a method on change, 
+   we have access to the new value and the old value, so we can also gain access to nested values with 'deep'.
+</p>
+</div>
 
 This is a really powerful concept and one that is some what unique to VueJs. To really see this we need to take a small dive 
 into how frameworks like React (Which is not reactive surprisingly) and Angular do things (mostly a comparision of render v template compilation). 

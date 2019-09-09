@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto md:flex">
+    <div class="container-inner mx-auto md:flex flex-wrap">
       <PostList v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>

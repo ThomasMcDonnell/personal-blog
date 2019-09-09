@@ -5,6 +5,7 @@
         <a href="/" class="text-3xl font-bold hover:text-green-400"><span class="text-green-400 hover:text-gray-800">thomas</span>mcdonnell</a>
         <div class="sm:mt-o mt-2">
           <ul class="uppercase tracking-wide font-bold flex items-center">
+            <li class="mr-8"> <search/></li>
             <li class="mr-8"><g-link to="/" class="text-gray-800 hover:text-green-400">Home</g-link></li>
             <li class="mr-8"><g-link to="/about/" class="text-gray-800 hover:text-green-400">About</g-link></li>
           </ul>
@@ -66,6 +67,16 @@
     </footer>
   </div>
 </template>
+
+<script>
+  import Search from '../components/Search'
+
+  export default {
+    components: {
+      Search
+    }
+  }
+</script>
 
 <static-query>
 query {

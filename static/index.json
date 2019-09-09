@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Vagrant & Laravel",
+    "description": "Avoid the pains and pit falls of setting up vagrant and laravel with homestead, trust me it's a rabbit hole \nyou don't want to venture alone.",
+    "path": "/blog/vagrant-and-laravel"
+  },
+  {
+    "title": "Python, Pillow, Boto3 & AWS",
+    "description": "First in a two part series to help you integrate boto3 and pillow into your python web app and store images\noff site in an aws s3 bucket",
+    "path": "/blog/python-pillow-boto3-and-aws"
+  },
+  {
+    "title": "Reactive Programming in Vue",
+    "description": "A brief and high level overview of reactive programming. Supercharge your frontend with VueJs's implementation of asynchronous data streams.",
+    "path": "/blog/reactive-programming-in-vue"
+  }
+]

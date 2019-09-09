@@ -4,8 +4,11 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import 'prismjs/themes/prism.css'
 import 'vue-social-sharing'
+import 'vue-fuse'
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSmile } from '@fortawesome/free-solid-svg-icons'
+import { faSearch} from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faFacebookF, faLinkedinIn, faWhatsapp, faReddit, faGithub, faPinterest, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import { faPython, faJs, faVuejs, faAngular, faPhp, faLaravel, faBootstrap, faSass, faDocker, faLinux, faCss3, faHtml5 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -16,11 +19,13 @@ export default function (Vue, { router, head, isClient }) {
 
   // Third party packages
   const SocialSharing = require('vue-social-sharing');
+  const VueFuse = require('vue-fuse');
   Vue.use(SocialSharing);
+  Vue.use(VueFuse);
 
   library.add( faFacebookF, faTwitter, faLinkedinIn, faWhatsapp, faReddit, faGithub, faPinterest,
                 faPython, faJs, faVuejs, faAngular, faPhp, faLaravel, faBootstrap, faSass, faDocker,
-                faLinux, faCss3, faHtml5, faSmile, faGithubAlt
+                faLinux, faCss3, faHtml5, faSmile, faGithubAlt, faSearch
       );
   Vue.component('font-awesome-icon', FontAwesomeIcon);
   Vue.config.productionTip = false;
