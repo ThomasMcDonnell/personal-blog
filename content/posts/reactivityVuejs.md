@@ -6,7 +6,18 @@ featuredImage: "../../static/VueJs.jpg"
 url: "https://thomasmcdonnell.xyz/blog/reactive-programming-in-vue"
 date: 2019-08-31
 ---
+<style>
 
+.custom-block.tip {
+    background-color: #f3f5f7;
+    border-color: #68d391;
+    padding: .1rem 1.5rem;
+    border-left-width: .5rem;
+    border-left-style: solid;
+    margin: 1rem 0;
+}
+
+</style>
 # Reactive Programming in VueJs
 
 
