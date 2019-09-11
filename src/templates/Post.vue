@@ -48,17 +48,20 @@
                 </transition>
             </div>
             <div class="sm:w-4/5 w-full">
-            <div class="flex sm:flex-row flex-col">
-                <div class="sm:w-3/4 py-2 w-full">
-                    <h1 class="font-bold text-4xl py-4">{{$page.post.title}}</h1>
-                    <h3 class="text-2xl">{{ $page.post.subTitle }}</h3>
+                <div class="flex sm:flex-row flex-col">
+                    <div class="sm:w-3/4 py-2 w-full">
+                        <h1 class="font-bold text-4xl py-4">{{$page.post.title}}</h1>
+                        <h3 class="text-2xl">{{ $page.post.subTitle }}</h3>
+                    </div>
+                    <div class="sm:block w-1/4 py-2 hidden">
+                        <p class="pt-8 text-center w-2/3 h-2/3 border-b-2 border-green-400"> {{ $page.post.date}}</p>
+                    </div>
                 </div>
-                <div class="sm:block w-1/4 py-2 hidden">
-                    <p class="pt-8 text-center w-2/3 h-2/3 border-b-2 border-green-400"> {{ $page.post.date}}</p>
-                </div>
-            </div>
             <div class="py-5">
                 <p v-html="$page.post.content" class="text-xl"></p>
+                <div class="comments mt-4">
+                    <vue-disqus shortname="thomasmcdonnell" :identifier="$page.post.title" url=""></vue-disqus>
+                </div>
             </div>
         </div>
         </div>

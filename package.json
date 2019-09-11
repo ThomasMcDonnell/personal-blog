@@ -17,6 +17,7 @@
     "@gridsome/transformer-remark": "^0.3.2",
     "axios": "^0.19.0",
     "gridsome": "^0.6.0",
+    "vue-disqus": "^3.0.5",
     "vue-fuse": "^2.1.0",
     "vue-social-sharing": "^2.4.6"
   },

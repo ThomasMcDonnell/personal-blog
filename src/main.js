@@ -2,9 +2,12 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
+
+
 import 'prismjs/themes/prism.css'
 import 'vue-social-sharing'
 import 'vue-fuse'
+import 'vue-disqus'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSmile } from '@fortawesome/free-solid-svg-icons'
@@ -20,13 +23,16 @@ export default function (Vue, { router, head, isClient }) {
   // Third party packages
   const SocialSharing = require('vue-social-sharing');
   const VueFuse = require('vue-fuse');
+  const VueDisqus = require('vue-disqus');
   Vue.use(SocialSharing);
   Vue.use(VueFuse);
+  Vue.use(VueDisqus);
 
   library.add( faFacebookF, faTwitter, faLinkedinIn, faWhatsapp, faReddit, faGithub, faPinterest,
                 faPython, faJs, faVuejs, faAngular, faPhp, faLaravel, faBootstrap, faSass, faDocker,
                 faLinux, faCss3, faHtml5, faSmile, faGithubAlt, faSearch
       );
+
   Vue.component('font-awesome-icon', FontAwesomeIcon);
   Vue.config.productionTip = false;
 
