@@ -29,8 +29,14 @@ In my search for answers I heard a lot about RxJs and how this is reactive progr
 its just a library at the end of the day. Reactive, in this context, is asynchronous data streams WTF :) Say with me for a second,
 streams are simply a sequence of ongoing events ordered in time that offer hooks with which to observe it. The championed 
 example for this is a hover state, think of a simple button on a web page, the moment your mouse hovers on that button
-an asynchronous data stream occurs while its transitioning through to its final end state. The steam therefore is observable 
+an asynchronous data stream occurs while its transitioning through to its final end state. The stream therefore is observable 
 from the start, points in between and the end.
+
+
+<div class="tip custom-block">
+<p>In simple and beautiful vue terms, this reactivity just means when you change the state how is it tracked and updated in DOM i.e how does vue track changes.
+</p>
+</div>
 
 
 Ok sounds good so far but why is this a thing? Well it becomes super easy to update state in reaction to events that occur,
