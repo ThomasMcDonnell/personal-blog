@@ -37,7 +37,7 @@ p a {
     color: #68d391;
 }
 
-a:hover {
+p a:hover {
     text-decoration: underline;
 }
 
