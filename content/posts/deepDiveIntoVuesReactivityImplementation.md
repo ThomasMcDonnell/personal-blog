@@ -56,12 +56,12 @@ th {
     background-color: #68d391;
 }
 
-ul {
+p ul {
     padding-left: 20px;
     margin-left: 20px;
 }
 
-ul li {
+p ul li {
     list-style: circle;
 }
 
