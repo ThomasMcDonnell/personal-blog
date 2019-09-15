@@ -13,5 +13,10 @@
     "title": "Reactive Programming in Vue",
     "description": "A brief and high level overview of reactive programming. Supercharge your frontend with VueJs's implementation of asynchronous data streams.",
     "path": "/blog/reactive-programming-in-vue"
+  },
+  {
+    "title": "Implementing a Reactivity System",
+    "description": "A deep dive and walk through of how a framework like Vue implements its reactivity system in plain old javascript that we all know.",
+    "path": "/blog/implementing-a-reactivity-system"
   }
 ]
