@@ -24,6 +24,7 @@ export default function (Vue, { router, head, isClient }) {
   const SocialSharing = require('vue-social-sharing');
   const VueFuse = require('vue-fuse');
   const VueDisqus = require('vue-disqus');
+
   Vue.use(SocialSharing);
   Vue.use(VueFuse);
   Vue.use(VueDisqus);
