@@ -178,7 +178,6 @@
                                 <span class="dot"></span>
                                 <h2 class="month-item">Carrick-on-Shannon Community School</h2>
                                 <div class="flex flex-row justify-content-between mt-3">
-                                    <h3 class="title-item w-1/2">Biochemistry & Molecular Biology</h3>
                                     <h3 class="title-item w-1/2">2005 - 2010</h3>
                                 </div>
                             </div>
