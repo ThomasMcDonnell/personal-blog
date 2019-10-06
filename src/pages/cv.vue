@@ -145,7 +145,7 @@
                                     <p class="description-item">{{ workHistory[i -1].technologies }}</p>
                                 </div>
                             </div>
-                            <div class="text-center">
+                            <div class="text-center" v-if="historyToShow < workHistory.length">
                                 <button class="btn bg-green-400 hover:bg-green-500 text-white font-bold py-1 px-4 border border-green-500 rounded" @click="historyToShow += 1">Load More</button>
                             </div>
                         </section>
@@ -178,7 +178,6 @@
                                 <span class="dot"></span>
                                 <h2 class="month-item">Carrick-on-Shannon Community School</h2>
                                 <div class="flex flex-row justify-content-between mt-3">
-                                    <h3 class="title-item w-1/2">2005 - 2010</h3>
                                 </div>
                             </div>
                         </section>
